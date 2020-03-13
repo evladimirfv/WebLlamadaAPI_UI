@@ -1,0 +1,44 @@
+<h1>PAGINA DE RECARGAS</h1>
+
+<p> LLAMADA A WEB API .</p>
+
+<p *ngIf="!forecasts"><em>Loading...</em></p>
+
+<table class='table'>
+  <thead>
+    <tr>
+    
+      <th>Moneda</th>
+      <th>Cotización (C)</th>
+      <th>Fecha</th>
+
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>{{ myParamUI_USD.source }}</td>
+      <td>{{ myParamUI_USD.value }}</td>
+      <td>{{ myParamUI_USD.updated }}</td>
+    </tr>
+
+    <tr>
+      <td>{{ myParamUI_EUR.source }}</td>
+      <td>{{ myParamUI_EUR.value }}</td>
+      <td>{{ myParamUI_EUR.updated }}</td>
+    </tr>
+
+    <tr>
+      <td>{{ myParamUI_BRL.source }}</td>
+      <td>{{ myParamUI_BRL.value }}</td>
+      <td>{{ myParamUI_BRL.updated }}</td>
+    </tr>
+
+
+  </tbody>
+</table>
+
+
+<!--<div> Refresh : {{ printX }} </div>-->
+
+
+
