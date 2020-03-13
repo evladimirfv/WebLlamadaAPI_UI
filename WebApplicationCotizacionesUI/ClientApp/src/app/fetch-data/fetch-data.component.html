@@ -7,7 +7,7 @@
 <table class='table'>
   <thead>
     <tr>
-    
+
       <th>Moneda</th>
       <th>Cotización (C)</th>
       <th>Fecha</th>
@@ -21,21 +21,15 @@
       <td>{{ myParamUI_USD.updated }}</td>
     </tr>
 
-    <tr>
-      <td>{{ myParamUI_EUR.source }}</td>
-      <td>{{ myParamUI_EUR.value }}</td>
-      <td>{{ myParamUI_EUR.updated }}</td>
-    </tr>
 
-    <tr>
-      <td>{{ myParamUI_BRL.source }}</td>
-      <td>{{ myParamUI_BRL.value }}</td>
-      <td>{{ myParamUI_BRL.updated }}</td>
-    </tr>
+
 
 
   </tbody>
 </table>
+
+
+<app-button (onClick)="functioncall($event)" [label]="label"></app-button>
 
 
 <!--<div> Refresh : {{ printX }} </div>-->
